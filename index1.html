@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .payment-method {
+            margin: 0 20px;
+            text-align: center;
+        }
+        .payment-method img {
+            width: 100px;
+            height: 100px;
+        }
+        .payment-method label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Payment Method</h1>
+        <div class="payment-methods">
+            <div class="payment-method">
+                <img src="images.png" alt="Credit Card">
+                <label for="credit_card">VISA CREDIT CARD</label>
+                <input type="radio" name="payment_method" id="credit_card">
+            <div></div>
+            <a href="Visa.html"><button>SUBMIT</button></a>
+            </div>
+            <div class="payment-method">
+                <img src="images.jpg" alt="PayPal">
+                <label for="paypal">PayPal</label>
+                <input type="radio" name="payment_method" id="paypal">
+            <div></div>
+            <a href="Paypal.html"><button>SUBMIT</button></a>
+            </div>
+        </div>
+    </div>
+</body>

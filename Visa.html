@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payment:Visa</title>
+    </head>
+    <body>
+        <h1>Enter Your Credit Card Information</h1>
+        <form action="process_payment.php" method="POST">
+            <label for="card_number">Credit Card Number:</label><br>
+            <input type="text" id="card_number" name="card_number" placeholder="Enter your card number" required><br><br>
+            
+            <label for="expiry_date">Expiration Date:</label><br>
+            <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YYYY" required><br><br>
+            
+            <label for="cvv">CVV:</label><br>
+            <input type="text" id="cvv" name="cvv" placeholder="CVV" required><br><br>
+            
+            <input type="submit" value="Submit Payment">
+        </form>
+    </body>
+    </html>
